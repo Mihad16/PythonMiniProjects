@@ -1,4 +1,8 @@
 
+print('----------'
+    'CALCULATOR'
+    '----------')
+
 def additional(num1,num2):
     additional=num1+num2
     return additional
@@ -38,15 +42,25 @@ while True :
         num2 = int(input("Enter a Second Number :"))
 
         if options == '1':
+            print("__________________")
             print("Result :", additional(num1, num2))
+            print("==================")
         elif options == '2':
+            print("__________________")
             print("Result :", subtraction(num1, num2))
+            print("==================")
         elif options == '3':
+            print("__________________")
             print("Result :", multipication(num1, num2))
+            print("==================")
         elif options == '4':
+            print("__________________")
             print("Result :", division(num1, num2))
+            print("==================")
         elif options == '5':
+            print("__________________")
             print("Result :", modules(num1, num2))
+            print("==================")
         else:
             print("Invalid Options")
 

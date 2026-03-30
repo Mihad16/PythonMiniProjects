@@ -1,4 +1,4 @@
-odo_list = []
+todo_list = []
 def addlist():
     item = input("enter a Item")
     todo_list.append(item)
@@ -7,9 +7,9 @@ def addlist():
 def displaylist():
     print("------------------")
     if not todo_list:
-        print("nothinh")
+        print("nothing")
     else:
-     print("Print Tod List")
+     print("Print Todo List")
 
     for index, item in enumerate(todo_list,start=1):
          print(f"{index} - {item}")
@@ -24,9 +24,7 @@ def remove():
         print("invalid")
 
 while True:
-    print("++++++++++++++++++++++++")
-    print("ToDo list App")
-    print("++++++++++++++++++++++++")
+    print("To-do App")
     print(" 1 - Add To List")
     print(" 2 - Display List")
     print(" 3 - RemoveList")
