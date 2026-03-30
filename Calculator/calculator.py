@@ -22,7 +22,9 @@ def division(num1,num2):
 def modules(num1,num2):
     modules=num1%num2
     return modules
-
+def squared(num1):
+    squared=num1**2
+    return squared
 
 while True :
     print("1: additional")
@@ -30,14 +32,19 @@ while True :
     print("3: multipication")
     print("4: division")
     print("5: modules")
-    print("6: exit")
+    print("6: squared")
+    print("7: exit")
     options = input("Select your option (1/2/3/4/5/6) :")
 
-    if options == '6':
+    if options == '7':
         print("exited")
         break
+    if options =='6':
+        num1=int(input("Enter a Number :"))
 
-    if options in ('1','2','3','4','5'):
+        print("__________________")
+        print("Result :", squared(num1))
+    if options in ('1','2','3','4','5',):
         num1 = int(input("Enter a First Number :"))
         num2 = int(input("Enter a Second Number :"))
 
